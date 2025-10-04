@@ -1,12 +1,39 @@
 # GetCID-Pro
 
-```` powershell
-Clear-host
-Write-Host
+PowerShell tool to query and retrieve the **Confirmation ID (CID)** from an **Installation ID (IID)** using the `pidkey.com` API.
+
+🔗 Based on: [MSTOOL Project](https://github.com/lbjlaq/mstool)
+
+---
+
+## ⚙️ Features
+
+- Lightweight PowerShell function
+- Automatically handles API requests to `pidkey.com`
+- Returns structured results with status and confirmation ID
+- No external dependencies required
+
+---
+
+## 📦 Installation
+
+Copy the `Get-Cid` function into your PowerShell profile or script file.
+
+---
+
+## 🚀 Usage
+
+```powershell
+Clear-Host
+
+# Call the function with your Installation ID
 $result = Get-Cid -Iid "7394726-2481651-7898865-1155685-1523751-1302401-1153736-3800775-0619280"
+
+# Display the response
 $result.Message
 $result.ConfirmationIdWithDash
 
+## 🚀 Function
 ```` powershell
 ## https://github.com/lbjlaq/mstool
 ## MSTOOL - Windows/Office Activation Tool Site
