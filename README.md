@@ -1,6 +1,13 @@
 # GetCID-Pro
 
 ```` powershell
+Clear-host
+Write-Host
+$result = Get-Cid -Iid "7394726-2481651-7898865-1155685-1523751-1302401-1153736-3800775-0619280"
+$result.Message
+$result.ConfirmationIdWithDash
+
+```` powershell
 ## https://github.com/lbjlaq/mstool
 ## MSTOOL - Windows/Office Activation Tool Site
 
@@ -102,11 +109,3 @@ function Get-Cid {
         }
     }
 }
-
-# Simple call
-Clear-host
-Write-Host
-$result = Get-Cid -Iid "7394726-2481651-7898865-1155685-1523751-1302401-1153736-3800775-0619280"
-$result.Message
-$result.ConfirmationIdWithDash
-
