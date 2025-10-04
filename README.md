@@ -1,4 +1,4 @@
-# GetCID-Pro
+# GetCID-Pro [Free Version, no Bot, no crap]
 
 PowerShell tool to query and retrieve the **Confirmation ID (CID)** from an **Installation ID (IID)** using the `pidkey.com` API.
 
